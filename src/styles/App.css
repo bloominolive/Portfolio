@@ -1,0 +1,77 @@
+/* Set styles here that I couldn't do as easily with Bootstrap. Also set font from Google Fonts. */
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Parkinsans:wght@300..800&display=swap');
+
+/* min-width on body prevents horizontal scrolling and keeps it at the right size even if the viewport is minimized.*/
+body{
+  min-width: 338px;
+}
+
+/*setting fonts on body and main*/
+body, main .navbar {
+  font-family: 'Nothing You Could Do', sans-serif !important;
+} 
+
+/* setting class for different font to specify on pages where needed*/
+.font-parkinsons {
+  font-family: 'Parkinsans', sans-serif !important;
+}
+
+.navbar {
+  position: relative; /* Ensure positioning for the navbar */
+  z-index: 1; /* Ensure the navbar remains above other elements */
+}
+
+.navbar button:hover{
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.nav-separator {
+  color: white; /* Match the navbar text color */
+  font-size: 1.5rem; /* Adjust size to match button font */
+}
+
+.navbar button:hover + .nav-separator {
+  font-style: normal; /* Ensures it doesn’t go italic */
+  text-decoration: none; /* Ensures it doesn’t underline */
+}
+
+/*setting logo headshot to correct spot off the navbar*/
+.navbar-logo {
+  position: absolute;
+  bottom: -120%; /* Push the image halfway out of the navbar */
+  height: 150px; /* Adjust the size as needed */
+  z-index: 2; /* Ensure the image appears above other elements */
+}
+
+.navbar-logo {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1); /* Grows the image by 10% */
+}
+
+
+.App-link {
+  color: #7fcdd9;
+}
+
+/* setting smaller screen size styles for navbar and footer.*/
+@media only screen and (max-width: 656px){
+  .navbar-logo{
+    position: absolute;
+    bottom: -95% !important;
+    height: 85px !important;
+    z-index: 2;
+  }
+}
+
+@media only screen and (max-width: 392px){
+  .nav-item .nav-link, .navbar-brand {
+    font-size: 1rem !important;
+  }
+}
+
+
