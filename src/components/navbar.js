@@ -36,6 +36,15 @@ export default function Navbar() {
                                 >
                                     Work
                                 </button>
+                                <span className="nav-separator ms-2 ms-md-3 me-2 me-md-3">|</span>
+                            </li>
+                            <li className="nav-item d-flex align-items-center">
+                                <button
+                                    className="nav-link text-light me-1 fs-4 btn btn-link"
+                                    onClick={() => navigate("/contact")}
+                                >
+                                    Contact
+                                </button>
                             </li>
                         </ul>
 

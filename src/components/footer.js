@@ -17,7 +17,7 @@ export default function Footer() {
 
                     {/* Name Section */}
                     <div>
-                        <p className="mb-0">René Olive</p>
+                        <a href="/login" className="mb-0 text-decoration-none" style={{cursor: 'default', color: 'inherit'}}>René Olive</a>
                     </div>
 
                     
